@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GearFit Clock Alarm Fixer</string>
+
+    <string name="hello_world">GearFit Clock Alarm Fixer</string>
+    <string name="action_settings">Settings</string>
+    <string name="notif_title">Alarma en el móvil</string>
+    <string name="notif_message">Tu móvil está sonando</string>
+</resources>
