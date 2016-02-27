@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -45,7 +47,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onClickStop(View v){
+    public void onClickSave(View v){
+
+        try {
+
+            int Interval = Integer.valueOf(((EditText) findViewById(R.id.etInterval)).getText().toString());
+            int Repeats = Integer.valueOf(((EditText) findViewById(R.id.etRepeats)).getText().toString());
+
+            if (Repeats > 100 || Repeats < 1 || Interval < 1) {
+                throw new Exception("Invalid values)");
+            }
+
+            Preferences.SaveRepeats(this, Repeats);
+            Preferences.SaveInterval(this, Interval);
+
+        }catch(Exception ex) {
+            Toast.makeText(this, getString(R.string.invalid_values_message), Toast.LENGTH_LONG);
+        }
+
+    }
+
+
+    /** just for testing */
+
+    public void onClickTestStop(View v){
         Log.i("AlarmClock", "Click stop");
 
         String msg = "com.devergence.gearfitclockalarmfixer.testStop";
@@ -59,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         alarm.set(AlarmManager.RTC, calendar.getTimeInMillis(), startPIntent);
     }
 
-    public void onClickStart(View v){
+    public void onClickTestStart(View v){
         Log.i("AlarmClock", "Click start");
 
         String msg = "com.devergence.gearfitclockalarmfixer.testStart";
@@ -72,4 +97,5 @@ public class MainActivity extends AppCompatActivity {
         AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarm.set(AlarmManager.RTC, calendar.getTimeInMillis(), startPIntent);
     }
+
 }

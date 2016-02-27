@@ -41,8 +41,6 @@ public class OnAlarmReceiver extends BroadcastReceiver {
 
     static String LOCAL_EVENT_START = "com.devergence.gearfitclockalarmfixer.startAlarm";
 
-    static final int NOTIFICATION_TIMES = 3;
-    static final int NOTIFICATION_SECONDS_INTERVAL = 3;
 
     static int TimesToNotifyLeft = 0;
 
@@ -51,7 +49,7 @@ public class OnAlarmReceiver extends BroadcastReceiver {
     public void onReceive(Context ctx, Intent i) {
         String action = i.getAction();
 
-        Toast.makeText(ctx, action, Toast.LENGTH_LONG).show();
+        //Toast.makeText(ctx, action, Toast.LENGTH_LONG).show();
         Log.i("AlarmClock", action);
 
         if (action.equals(LOCAL_EVENT_START)) {
@@ -62,9 +60,9 @@ public class OnAlarmReceiver extends BroadcastReceiver {
         for (String enableEvent : ENABLE_ALARM_EVENTS) {
             if (action.equals(enableEvent))
             {
-                Toast.makeText(ctx, "ACTIVAR", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ctx, "ACTIVAR", Toast.LENGTH_LONG).show();
                 Log.i("AlarmClock", "ACTIVAR");
-                startAlarm(ctx, NOTIFICATION_SECONDS_INTERVAL);
+                startAlarm(ctx, Preferences.GetInterval(ctx));
                 break;
             }
         }
@@ -72,7 +70,7 @@ public class OnAlarmReceiver extends BroadcastReceiver {
         for (String disableEvent : DISABLE_ALARM_EVENTS) {
             if (action.equals(disableEvent))
             {
-                Toast.makeText(ctx, "DESACTIVAR", Toast.LENGTH_LONG).show();
+                //Toast.makeText(ctx, "DESACTIVAR", Toast.LENGTH_LONG).show();
                 Log.i("AlarmClock", "DESACTIVAR");
                 stopAlarm();
                 break;
@@ -106,7 +104,7 @@ public class OnAlarmReceiver extends BroadcastReceiver {
             NotificationManager notificationManager = (NotificationManager) ctx.getSystemService(Context.NOTIFICATION_SERVICE);
             notificationManager.notify(NotificationId, notif.build());
 
-            programNextNotification(ctx, NOTIFICATION_SECONDS_INTERVAL);
+            programNextNotification(ctx, Preferences.GetInterval(ctx));
         }else
         {
             Log.i("AlarmClock", "No Notif (Times left: " + TimesToNotifyLeft + ")");
@@ -128,7 +126,7 @@ public class OnAlarmReceiver extends BroadcastReceiver {
 
     private void startAlarm(Context ctx, int interval)
     {
-        TimesToNotifyLeft = NOTIFICATION_TIMES;
+        TimesToNotifyLeft = Preferences.GetRepeats(ctx);
         programNextNotification(ctx, interval);
     }
 

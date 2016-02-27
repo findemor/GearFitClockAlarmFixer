@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GearFit Clock Alarm Fixer</string>
+
+    <string name="hello_world">GearFit Clock Alarm Fixer</string>
+    <string name="action_settings">Configuración</string>
+    <string name="notif_title">Alarma en el móvil</string>
+    <string name="notif_message">Tu móvil está sonando</string>
+
+    <string name="saved">Configuración guardada</string>
+    <string name="invalid_values_message">Valores no validos, permitido entre 1 y 100</string>
+    <string name="title_repeats">Nº Notificaciones</string>
+    <string name="sub_repeats">Número de veces que se notificará que una alarma está sonando.</string>
+    <string name="title_interval">Intervalo</string>
+    <string name="sub_interval">Intervalo en segundos que transcurrirá entre cada notificación.</string>
+    <string name="save_text">Guardar configuración</string>
+    <string name="notif_warning_title">Recuerda activar las notificaciones de esta app en las opciones del app Gear Fit Manager para que funcione correctamente.</string>
+</resources>

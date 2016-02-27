@@ -22,9 +22,14 @@ This is a Android Studio project just for testing (by now).
 
 5. Open Gear Fit Manager app and enable this app notifications:
 
-	> Gear Fit Manager > Notifications > General Notifications > Enable GearFit Cock Alarm Fixer
+	> Gear Fit Manager > Notifications > General Notifications > Enable GearFit Cock Alarm Fixer check
 
-Tested (working pefectly) in:
+6. In Gear Fit Manager disable Limit Notifications
+
+	> Gear Fit Manager > Notifications > Disable Limit Notifications check
+
+
+Tested (working perfectly) in:
 
 * Nexus 4 - Android 4.4 Cyanogen
 

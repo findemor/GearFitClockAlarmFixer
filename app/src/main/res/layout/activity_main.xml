@@ -1,29 +1,90 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView" />
+        android:text="@string/notif_warning_title"
+        android:padding="8dp"
+        android:background="@drawable/border"
+        android:textColor="#6A0888"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_repeats"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_repeats"
+        android:textSize="15sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/etRepeats"
+        android:layout_marginBottom="16dp"
+        android:text="3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_interval"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_interval"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/etInterval"
+        android:layout_marginBottom="16dp"
+        android:text="3"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="empezar"
+        android:text="@string/save_text"
         android:id="@+id/btnStart"
-        android:layout_below="@+id/textView"
-        android:onClick="onClickStart"
-        android:layout_alignParentStart="true" />
+        android:onClick="onClickSave" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="terminar"
-        android:id="@+id/btnStop"
-        android:onClick="onClickStop"
-        android:layout_below="@+id/btnStart" />
+        android:text="Test start"
+        android:id="@+id/btnTestStart"
+        android:visibility="gone"
+        android:onClick="onClickTestStart" />
 
-</RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test start"
+        android:id="@+id/btnTestStop"
+        android:visibility="gone"
+        android:onClick="onClickTestStop" />
+
+</LinearLayout>
+</ScrollView>

@@ -3,6 +3,15 @@
 
     <string name="hello_world">GearFit Clock Alarm Fixer</string>
     <string name="action_settings">Settings</string>
-    <string name="notif_title">Alarma en el móvil</string>
-    <string name="notif_message">Tu móvil está sonando</string>
+    <string name="notif_title">Alarm</string>
+    <string name="notif_message">Alarm sounding</string>
+
+    <string name="saved">Saved configuration</string>
+    <string name="invalid_values_message">Invalid values, must be between 1 and 100</string>
+    <string name="title_repeats">Num. of notifications</string>
+    <string name="sub_repeats">Number of times that alarm will be notified to your gear fit.</string>
+    <string name="title_interval">Interval</string>
+    <string name="sub_interval">Interval in seconds between each notification.</string>
+    <string name="save_text">Save configuration</string>
+    <string name="notif_warning_title">Remember to enable notifications for this app in Gear Fit Manager options for keep things working.</string>
 </resources>
