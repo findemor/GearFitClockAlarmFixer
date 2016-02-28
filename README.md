@@ -9,11 +9,11 @@ This is a Android Studio project just for testing (by now).
 
 1. Install Gear Fit Manager (fixed for non samsung devices)
 
-  [KitKat version]()
+  * [Version Fixed for KitKat](https://github.com/findemor/GearFitClockAlarmFixer/blob/master/Dependences/GearFitManager.apk)
 
 2. Install Gear Fit Clock Alarm Fixer (this app)
 
-	[From Google Play]()
+  * [From Google Play](https://play.google.com/store/apps/details?id=com.devergence.gearfitclockalarmfixer)
 
 3. Pair your Gear Fit normally via bluetooth
 4. Enable Notifications in your Android settings
@@ -27,18 +27,23 @@ This is a Android Studio project just for testing (by now).
 6. In Gear Fit Manager disable Limit Notifications
 
 	> Gear Fit Manager > Notifications > Disable Limit Notifications check
-
-
-Tested (working perfectly) in:
-
-* Nexus 4 - Android 4.4 Cyanogen
-
-## v 1.0
-
-Trying to fix this error in Nexus 5 by launching auxiliar standard notifications when the native clock launchs its broadcasts.
+    
+7. Your device is ready to show notifications in your Gear Fit when the native Clock Alarm is sounding.
 
 # Credits
 
 by [@findemor](http://www.twitter.com/findemor) ( [blog.findemor.es](http://blog.findemor.es) )
 
 Feel free to collaborate. 
+
+## Compatibility
+
+Tested (working perfectly) in:
+
+* Nexus 4 - Android 4.4 Cyanogen
+
+## Fixes
+
+## v 1.0
+
+Trying to fix this error in Nexus 5 by launching auxiliar standard notifications when the native clock launchs its broadcasts.
