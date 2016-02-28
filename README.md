@@ -30,8 +30,8 @@ This is a Android Studio project just for testing (by now).
     
 7. Your device is ready to show notifications in your Gear Fit when the native Clock Alarm is sounding.
 
-	> You can see it working in this video [Youtuve demo](https://youtu.be/GETiMmu5y6E)
-	
+	> You can see it working in this video [YouTube demo](https://youtu.be/GETiMmu5y6E)
+
 # Credits
 
 by [@findemor](http://www.twitter.com/findemor) ( [blog.findemor.es](http://blog.findemor.es) )
