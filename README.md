@@ -9,11 +9,11 @@ This is a Android Studio project just for testing (by now).
 
 1. Install Gear Fit Manager (fixed for non samsung devices)
 
-  [KitKat version]()
+    [KitKat fixed version](https://github.com/findemor/GearFitClockAlarmFixer/raw/master/Dependences/GearFitManager.apk)
 
 2. Install Gear Fit Clock Alarm Fixer (this app)
 
-	[From Google Play]()
+	[From Google Play](https://play.google.com/store/apps/details?id=com.devergence.gearfitclockalarmfixer)
 
 3. Pair your Gear Fit normally via bluetooth
 4. Enable Notifications in your Android settings
