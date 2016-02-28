@@ -27,18 +27,25 @@ This is a Android Studio project just for testing (by now).
 6. In Gear Fit Manager disable Limit Notifications
 
 	> Gear Fit Manager > Notifications > Disable Limit Notifications check
+    
+7. Your device is ready to show notifications in your Gear Fit when the native Clock Alarm is sounding.
 
-
-Tested (working perfectly) in:
-
-* Nexus 4 - Android 4.4 Cyanogen
-
-## v 1.0
-
-Trying to fix this error in Nexus 5 by launching auxiliar standard notifications when the native clock launchs its broadcasts.
-
+	> You can see it working in this video [Youtuve demo](https://youtu.be/GETiMmu5y6E)
+	
 # Credits
 
 by [@findemor](http://www.twitter.com/findemor) ( [blog.findemor.es](http://blog.findemor.es) )
 
 Feel free to collaborate. 
+
+## Compatibility
+
+Tested (working perfectly) in:
+
+* Nexus 4 - Android 4.4 Cyanogen
+
+## Fixes
+
+## v 1.0
+
+Trying to fix this error in Nexus 5 by launching auxiliar standard notifications when the native clock launchs its broadcasts.
